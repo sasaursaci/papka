@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <title>uniMail</title>
 </head>
-<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-<form>
+<body background="140520040137.jpg">
+
+<form method="post">
 
     <!-- Hidden Required Fields -->
-    <input type="hidden" name="project_name" value="Site Name">
+    <input type="hidden" name="project_name" value="Регестрація">
     <input type="hidden" name="admin_email" value="sasaursaci@gmail.com">
-    <input type="hidden" name="form_subject" value="Form Subject">
+    <input type="hidden" name="form_subject" value="Регестрація громадян">
     <!-- END Hidden Required Fields -->
+    <center>
+    <H1> Ви на сайті регестраціі громадян України </H1>
+    <H2>
+        Особиста інформація :
+    </H2>
+    <small>Прізвище Ім'я Побатькові </small> <br>
+    <input type="text" size="20" >
+<H5>Рід</H5>
+    <input type="radio" name="Sex" value="Мужской" checked="checked" >
+    <small>Чоловік</small><br>
 
-    <input type="text" name="Name" placeholder="You name..." required><br>
-    <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-    <input type="text" name="Phone" placeholder="You phone..."><br>
-    <button>Send</button>
+    <input type="radio" name="Sex" value="Женский" >
+    <small>Жінка</small><br>
 
+        <small>Дата народження </small><br />
+        <p>  <input type="date" name="calendar"> </p>
+
+    <button>відправити</button>
+    </center>
 </form>
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
