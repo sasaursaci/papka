@@ -7,10 +7,12 @@ $name = htmlspecialchars($name);
 $sex = htmlspecialchars($sex);
 $date = htmlspecialchars($date);
 $name = urldecode($name);
-$email = urldecode($email);
-$fio = trim($fio);
-$email = trim($email);
-if (mail("sasaursaci@gmail.com", "Регестрація громадян", "ПІП:".$name.". Рід: ".$sex ,"From: sasaursaci@gmail.com \r\n")){
+$sex = urldecode($sex);
+$date = urldecode($date);
+$name = trim($name);
+$sex = trim($sex);
+$date = trim($date);
+if (mail("sasaursaci@gmail.com", "Регестрація громадян", "ПІП:".$name.". Рід: ".$sex  ."дата народження:". $date ,  "From: sasaursaci@gmail.com \r\n")){
     echo "Регестрацію завершено";
 } else {
     echo "Сталася помилка! Спробуйте ще раз";
