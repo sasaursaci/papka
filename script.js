@@ -1,21 +1,20 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-    $("form").submit(function () {
+    //E-mail Ajax Send
+    $("form").submit(function() { //Change
         var th = $(this);
         $.ajax({
             type: "POST",
-            url: "post1.php",
+            url: "gmail.php", //Change
             data: th.serialize()
-        }).done(function () {
-            alert("Дякую вам!");
-            setTimeout(function () {
+        }).done(function() {
+            alert("Дякую!");
+            setTimeout(function() {
+                // Done Functions
                 th.trigger("reset");
             }, 1000);
         });
         return false;
     });
-
-
-
 
 });
